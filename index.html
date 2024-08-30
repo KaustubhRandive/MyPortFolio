@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a73e6b25dd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--------- Home --------->
+
+    <div id="header">
+        
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#Portfolio">PRojects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    <div class="navlist1">
+            <div class="logo">
+                <p style="color: black;">Heyy,</p>
+                <p style="color: black;"> I'm Full-Stack Developer.</p>
+                <h1 style="color: burlywood;"><span style="color: brown;">Kaustubh Randive</span> From Pune.</h1>
+            </div>
+            <div class="img">
+                <img style="border-radius: 20px;" src="images/WhatsApp Image 2024-04-15 at 2.26.40 AM.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-------- About---------->
+
+    <div id="about">
+        <div class="abouts">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/kaustubhProfile1.jpeg">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello, I'm Kaustubh Randive, a 2022 mechanical engineering graduate with a strong
+                        passion for IT. <br>Proficient in <b> Core Java , Spring , Hibernate , JDBC ,  MySQL ,ReactJS , JavaScript , HTML5 , CSS , DataStructures.</b>
+                        Eager to apply my diverse skill set in a dynamic work
+                        environment to contribute to innovative solutions and drive technological
+                        advancements.
+                    </p>
+                    <div class="skills">
+                        <ul>
+                            <h2>Education</h2>
+                           
+                            <li><span>2018-2022</span><br> BE(Mechanical) From SPPU <span> <b>80.60%</b></span></li>
+                            <li><span>2023-2024</span><br> Center For Development Of Advance Computing(C-DAC)</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- skills ----------->
+
+    <div id="services">
+        <h1 class="sub-title" style="color: black;">My Stack Tech</h1>
+        <div class="services-list">
+            <div>
+                <h2>Front-End :</h2>
+                <ul class="frontend">
+                    <p><i class="fa-brands fa-js"></i>JavaScript</p>
+                    <p><i class="fa-brands fa-react"></i>React JS</p>
+                    <p><i class="fa-brands fa-html5"></i>HTML5</p>
+                    <p><i class="fa-brands fa-css3"></i>CSS3</p>
+
+                </ul>
+            </div>
+
+            <div>
+                <h2>Back-End :</h2>
+                <ul class="frontend">
+                    <p><i class="fa-brands fa-java"></i>Core Java</p>
+                    <p><i class="fas fa-leaf"></i>Spring</p>
+                    <p><i class="fa-brands fa-java"></i>Hibernate</p>
+                    <p><i class="fa-solid fa-database"></i>MySql</p>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Tools & Technologies :</h2>
+                <ul class="frontend">
+                    <p><i class="fa-solid fa-code"></i>Visual Studio Code</p>
+                   
+                    <p><i class="fa-brands fa-git-alt"></i>Git</p>
+                    <p><i class="fa-brands fa-github"></i>GitHub</p>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--------- Projects ----------->
+
+    <div id="Portfolio" class="port">
+        <h2 style="color: black;">Projects</h2>
+
+        <div class="container">
+            <div class="project1">
+                <img src="images/Spotify.png">
+                <p>Spotify Clone</p>
+                
+                <a href="https://github.com/KaustubhRandive/Spotify1.git">Source Code<i
+                        class="fa-brands fa-gitlab"></i></a>
+            </div>
+            <div class="project2">
+                <img src="images/E_Commers.png">
+                <p>E-Commers Website</p>
+                <a href="https://github.com/KaustubhRandive/E-commers1.git">Source Code<i
+                        class="fa-brands fa-gitlab"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- Contact --------------->
+
+    <div id="contact">
+        <div class="contact-left">
+            <div >
+                <h1>Let's Connect</h1>
+                <p> <i class="fa-solid fa-envelope"></i>kaustubhrandive1611@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>9359474940</p>
+                <div class="icons">
+                    <a href="mailto:kaustubhrandive1611@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/KaustubhRandive"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kaustubh-randive-rk1611/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="images/KaustubhCV.pdf" download class="btn">Download CV</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+
+            <p><b>Kaustubh Randive</b> <i class="fa-solid fa-heart"></i></p>
+
+        </div>
+    </div>
+
+
+    <!---------- JavaScript ---------->
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
